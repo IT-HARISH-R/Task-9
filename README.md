@@ -71,10 +71,10 @@ db.attendance.insertMany([
     {"_id": "att3", "user_id": "user2", "date": "2020-10-16", "status": "present"},
     {"_id": "att4", "user_id": "user2", "date": "2020-10-17", "status": "present"},
     {"_id": "att5", "user_id": "user3", "date": "2020-10-16", "status": "absent"},
-    {"_id": "att6", "user_id": "user3", "date": "2020-10-17", "status": "present"},
+    {"_id": "att6", "user_id": "user3", "date": "2020-10-17", "status": "absent"},
     {"_id": "att7", "user_id": "user4", "date": "2020-10-16", "status": "present"},
     {"_id": "att8", "user_id": "user4", "date": "2020-10-17", "status": "present"},
-    {"_id": "att9", "user_id": "user5", "date": "2020-10-16", "status": "present"},
+    {"_id": "att9", "user_id": "user5", "date": "2020-10-16", "status": "absent"},
     {"_id": "att10", "user_id": "user5", "date": "2020-10-17", "status": "absent"}
 ]);
 ```
@@ -244,10 +244,10 @@ db.mentors.aggregate([
     }
 ]);
 ```
+![alt text](./img/q5.png)
 
 
-
-6. Find the number of users who were absent and did not submit tasks between October 15, 2020, and October 31, 2020
+1. Find the number of users who were absent and did not submit tasks between October 15, 2020, and October 31, 2020
 
 
 ```js
@@ -282,3 +282,6 @@ db.attendance.aggregate([
     }
 ]);
 ```
+
+![alt text](./img/q6.png)
+
